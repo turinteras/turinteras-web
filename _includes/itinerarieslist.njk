@@ -1,0 +1,8 @@
+<ol reversed class="itinerarieslist" style="counter-reset: start-from {{ itinerariesList.length + 1 }}">
+{% for itinerary in itinerariesList | reverse %}
+	<li class="itinerarieslist-item{% if itinerary.url == url %} itinerarieslist-item-active{% endif %}">
+		<a href="{{ itinerary.url }}" class="itinerarieslist-link">{% if itinerary.data.title %}{{ itinerary.data.title }}{% else %}<code>{{ itinerary.url }}</code>{% endif %}</a>
+		<time class="itinerarieslist-date" datetime="{{ itinerary.date | htmlDateString }}">{{ itinerary.date | readableDate }}</time>
+	</li>
+{% endfor %}
+</ol>
