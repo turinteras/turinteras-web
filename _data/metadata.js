@@ -1,6 +1,6 @@
 module.exports = {
 	title: "Turinteras",
-	url: "http://www.turinteras.test",
+	url: "https://turinteras.netlify.app",
 	language: "es",
 	description: "Turismo sin fronteras",
 	author: {
