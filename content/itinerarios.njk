@@ -1,10 +1,36 @@
 ---
 layout: layouts/home.njk
 eleventyNavigation:
-  key: Itinerarios
-  order: 2
+key: Itinerarios
+order: 2
+pagination:
+  data: collections.itineraries
+  size: 4 
 ---
-<h1>Itinerarios</h1>
 
-{% set itinerariesList = collections.itineraries %}
-{% include "itinerarieslist.njk" %}
+<h1>Itinerarios</h1>
+<ol>
+	{%- for itinerary in pagination.items %}
+		<li class="itinerarieslist-item{% if itinerary.url == url %} itinerarieslist-item-active{% endif %}">
+			<a href="{{ itinerary.url }}" class="itinerarieslist-link">
+				{% if itinerary.data.title %}
+					{{ itinerary.data.title }}
+				{% else %}
+					<code>{{ itinerary.url }}</code>
+				{% endif %}
+			</a>
+			<time class="itinerarieslist-date" datetime="{{ itinerary.date | htmlDateString }}">{{ itinerary.date | readableDate }}</time>
+		</li>
+	{% endfor -%}
+</ol>
+<nav aria-labelledby="my-pagination">
+	<h2 id="my-pagination">This is my Pagination</h2>
+	<ol>
+		{%- for pageEntry in pagination.pages %}
+			<li>
+				<a href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page" {% endif %}>Page {{ loop.index }}</a>
+			</li>
+		{%- endfor %}
+	</ol>
+</nav>
+</ol>
