@@ -13,31 +13,36 @@
 		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
 
 		{%- css %}{% include "public/css/index.css" %}{% endcss %}
-		<style>{% getBundle "css" %}</style>
+		<style>
+			{% getBundle "css" %}
+		</style>
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Ir al contenido principal</a>
 
 		<header>
 			{#- <a href="/" class="home-link">{{ metadata.title }}</a> #}
-			{% image "public/img/logo.png", "Logo de Turinteras" %}
+			{% image "public/img/logo.png",
+			"Logo de Turinteras" %}
 
 			<nav>
 				<h2 class="visually-hidden">Menú de navegación</h2>
 				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
+					{%- for entry in collections.all | eleventyNavigation %}
+						<li class="nav__item">
+							<a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
+						</li>
+					{%- endfor %}
 				</ul>
 			</nav>
 			<label for="lang" class=visually-hidden>Idioma</label>
-      		<select id="lang">
-        		<option default>Español</option>
-        		<option>English</option>
+			<select id="lang">
+				<option default>Español</option>
+				<option>English</option>
 				<option>Français</option>
 				<option>Deustch</option>
 				<option>日本語</option>
-      		</select>
+			</select>
 		</header>
 
 		<main id="skip">

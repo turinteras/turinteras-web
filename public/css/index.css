@@ -145,11 +145,11 @@ header {
 	margin: 0;
 	list-style: none;
 }
-.nav-item {
+.nav__item {
 	display: inline-block;
 	margin-right: 1em;
 }
-.nav-item a[href]:not(:hover) {
+.nav__item a[href]:not(:hover) {
 	text-decoration: none;
 }
 .nav a[href][aria-current="page"] {
@@ -157,19 +157,19 @@ header {
 }
 
 /* Itineraries list */
-.itinerarieslist {
+.itineraries-list {
 	list-style: none;
 	padding: 0;
 	padding-left: 1.5rem;
 }
-.itinerarieslist-item {
+.itineraries-list__item {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: baseline;
 	counter-increment: start-from -1;
 	margin-bottom: 1em;
 }
-.itinerarieslist-item:before {
+.itineraries-list__item:before {
 	display: inline-block;
 	pointer-events: none;
 	content: "" counter(start-from, decimal-leading-zero) ". ";
@@ -177,15 +177,15 @@ header {
 	text-align: right;
 	margin-left: -1.5rem;
 }
-.itinerarieslist-date,
-.itinerarieslist-item:before {
+.itineraries-list__date,
+.itineraries-list__item:before {
 	font-size: 0.8125em; /* 13px /16 */
 	color: var(--color-gray-90);
 }
-.itinerarieslist-date {
+.itineraries-list__date {
 	word-spacing: -0.5px;
 }
-.itinerarieslist-link {
+.itineraries-list__link {
 	font-size: 1.1875em; /* 19px /16 */
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
@@ -195,7 +195,7 @@ header {
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
 }
-.itinerarieslist-item-active .itinerarieslist-link {
+.itineraries-list__item--active .itineraries-list__link {
 	font-weight: bold;
 }
 
