@@ -107,7 +107,7 @@ header:after {
 	clear: both;
 }
 
-.links-nextprev {
+.itinerary__nextprev {
 	list-style: none;
 	border-top: 1px dashed var(--color-gray-20);
 	padding: 1em 0;
@@ -199,7 +199,7 @@ header {
 	font-weight: bold;
 }
 
-.itinerary-metadata {
+.itinerary__metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: 0.5em;
@@ -207,6 +207,6 @@ header {
 	padding: 0;
 	margin: 0;
 }
-.itinerary-metadata time {
+.itinerary__metadata time {
 	margin-right: 1em;
 }

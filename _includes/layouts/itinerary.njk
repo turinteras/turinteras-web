@@ -1,21 +1,32 @@
 ---
 layout: layouts/base.njk
 ---
-<h1>{{ title }}</h1>
 
-<ul class="itinerary-metadata">
-	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-</ul>
+<article class="itinerary">
+	<h1>{{ title }}</h1>
 
-{{ content | safe }}
+	<ul class="itinerary__metadata">
+		<li>
+			<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+		</li>
+	</ul>
 
-{%- if collections.itineraries %}
-{%- set previousItinerary = collections.itineraries | getPreviousCollectionItem %}
-{%- set nextItinerary = collections.itineraries | getNextCollectionItem %}
-{%- if nextItinerary or previousItinerary %}
-<ul class="links-nextprev">
-	{%- if previousItinerary %}<li>Itinerario anterior: <a href="{{ previousItinerary.url }}">{{ previousItinerary.data.title }}</a></li>{% endif %}
-	{%- if nextItinerary %}<li>Itinerario siguiente: <a href="{{ nextItinerary.url }}">{{ nextItinerary.data.title }}</a></li>{% endif %}
-</ul>
-{%- endif %}
-{%- endif %}
+	{{ content | safe }}
+
+	{%- if collections.itineraries %}
+		{%- set previousItinerary = collections.itineraries | getPreviousCollectionItem %}
+		{%- set nextItinerary = collections.itineraries | getNextCollectionItem %}
+		{%- if nextItinerary or previousItinerary %}
+			<ul class="links-nextprev">
+				{%- if previousItinerary %}
+					<li>Itinerario anterior: <a href="{{ previousItinerary.url }}">{{ previousItinerary.data.title }}</a>
+					</li>
+				{% endif %}
+				{%- if nextItinerary %}
+					<li>Itinerario siguiente: <a href="{{ nextItinerary.url }}">{{ nextItinerary.data.title }}</a>
+					</li>
+				{% endif %}
+			</ul>
+		{%- endif %}
+	{%- endif %}
+</article>
