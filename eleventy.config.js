@@ -47,6 +47,17 @@ module.exports = function (eleventyConfig) {
 
 	// eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 
+	eleventyConfig.addCollection("sortedItineraries", function (collectionApi) {
+		return collectionApi
+			.getFilteredByTag("itineraries")
+			.sort(function (a, b) {
+				return (
+					b.data.itineraryDate - a.data.itineraryDate ||
+					b.date - a.date
+				);
+			});
+	});
+
 	return {
 		// Control which files Eleventy will process
 		templateFormats: ["md", "njk", "html"],

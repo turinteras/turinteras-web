@@ -3,17 +3,26 @@ const fs = require("fs");
 const n = 20;
 const pathPrefix = "fakeitinerary";
 
-const createDate = (function () {
-	let itineraryDate = new Date();
-	itineraryDate.setDate(itineraryDate.getDate() - 7);
-	return function () {
-		if (Math.random() > 0.2) {
+const [createDate, itineraryDate] = (function () {
+	let itineraryCreatedDate = new Date();
+	itineraryCreatedDate.setDate(itineraryCreatedDate.getDate() - 14);
+	return [
+		function () {
+			if (Math.random() > 0.2) {
+				itineraryCreatedDate.setDate(
+					itineraryCreatedDate.getDate() - (Math.random() * 7 + 1)
+				);
+			}
+			return itineraryCreatedDate.toISOString().substring(0, 10);
+		},
+		function () {
+			const itineraryDate = new Date(itineraryCreatedDate);
 			itineraryDate.setDate(
-				itineraryDate.getDate() - (Math.random() * 30 + 1)
+				itineraryCreatedDate.getDate() + (Math.random() * 30 + 1)
 			);
-		}
-		return itineraryDate.toISOString().substring(0, 10);
-	};
+			return itineraryDate.toISOString().substring(0, 10);
+		},
+	];
 })();
 
 for (let i = n; i >= 1; i--) {
@@ -40,6 +49,7 @@ for (let i = n; i >= 1; i--) {
 title: Fake itinerary number ${i}
 description: Description of fake itinerary number ${i}
 date: ${createDate()}
+itineraryDate: ${itineraryDate()}
 ---
 
 <h1>
