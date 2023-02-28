@@ -1,5 +1,4 @@
 const { DateTime } = require("luxon");
-const markdownItAnchor = require("markdown-it-anchor");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
@@ -57,6 +56,8 @@ module.exports = function (eleventyConfig) {
 				);
 			});
 	});
+
+	// eleventyConfig.watchIgnores.add("**/*.css.map"); // breaks dev server browser auto refresh
 
 	return {
 		// Control which files Eleventy will process

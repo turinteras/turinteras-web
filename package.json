@@ -2,13 +2,15 @@
 	"name": "turinteras",
 	"version": "1.0.0",
 	"scripts": {
+		"watch-sass": "sass --watch sass:public/css",
 		"build": "npx @11ty/eleventy",
 		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
-		"start": "npx @11ty/eleventy --serve --quiet",
+		"watch-11ty": "npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
 		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
-		"pretty": "prettier --write \"./**/*.{js,json,html,css,md}\""
+		"pretty": "prettier --write \"./**/*.{js,json,html,css,md}\"",
+		"start": "concurrently \"npm:watch-*\""
 	},
 	"engines": {
 		"node": ">=14"
@@ -19,6 +21,7 @@
 		"@11ty/eleventy-navigation": "^0.3.5",
 		"@11ty/eleventy-plugin-bundle": "^1.0.1",
 		"@11ty/eleventy-plugin-rss": "^1.2.0",
+		"concurrently": "^7.6.0",
 		"luxon": "^3.2.1",
 		"prettier": "2.8.4"
 	}
