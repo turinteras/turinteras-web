@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"scripts": {
 		"watch-sass": "sass --watch sass:public/css",
+		"build-sass": "sass sass:public/css",
 		"build": "npx @11ty/eleventy",
 		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
 		"watch-11ty": "npx @11ty/eleventy --serve --quiet",
