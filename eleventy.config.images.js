@@ -13,7 +13,7 @@ module.exports = (eleventyConfig) => {
 	// https://www.11ty.dev/docs/plugins/image/
 	eleventyConfig.addAsyncShortcode(
 		"image",
-		async function imageShortcode(src, alt, widths, sizes) {
+		async function imageShortcode(src, alt, className, id, widths, sizes) {
 			let formats = ["avif", "webp", "auto"];
 			let file;
 			if (src.startsWith("./")) {
@@ -34,6 +34,12 @@ module.exports = (eleventyConfig) => {
 				loading: "lazy",
 				decoding: "async",
 			};
+			if (className) {
+				imageAttributes.class = className;
+			}
+			if (id) {
+				imageAttributes.id = id;
+			}
 			return eleventyImage.generateHTML(metadata, imageAttributes);
 		}
 	);

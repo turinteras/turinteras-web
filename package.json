@@ -5,6 +5,8 @@
 		"watch-sass": "sass --watch sass:public/css",
 		"build-sass": "sass sass:public/css",
 		"build": "npx @11ty/eleventy",
+		"build-all": "npm run build-sass && npm run build",
+		"clean-all": "rm -rf _site && rm -rf public/css/*",
 		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
 		"watch-11ty": "npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
