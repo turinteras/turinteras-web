@@ -17,7 +17,7 @@ layout: layouts/base.njk
 		{%- set previousItinerary = collections.itineraries | getPreviousCollectionItem %}
 		{%- set nextItinerary = collections.itineraries | getNextCollectionItem %}
 		{%- if nextItinerary or previousItinerary %}
-			<ul class="links-nextprev">
+			<ul class="itinerary__nextprev">
 				{%- if previousItinerary %}
 					<li>Itinerario anterior: <a href="{{ previousItinerary.url }}">{{ previousItinerary.data.title }}</a>
 					</li>

@@ -13,6 +13,8 @@ module.exports = function (eleventyConfig) {
 
 	// Watch content images for the image pipeline.
 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
+	eleventyConfig.addWatchTarget("sass");
+	eleventyConfig.setWatchThrottleWaitTime(300);
 
 	// App plugins
 	eleventyConfig.addPlugin(require("./eleventy.config.images.js"));
