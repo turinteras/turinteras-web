@@ -74,24 +74,6 @@ module.exports = function (eleventyConfig) {
 			});
 	});
 
-	eleventyConfig.addUrlTransform(({ url }) => {
-		// `url` is guaranteed to be a string here even if you’re using `permalink: false`
-		const regex =
-			/(?<start>.*?\/)itineraries\/(?<lang>[a-z]{2})\/(?<end>.*)/i;
-		const found = url.match(regex);
-		if (found !== null) {
-			const newUrl =
-				found.groups.start +
-				found.groups.lang +
-				"/itineraries" +
-				(found.groups.end.length > 0 ? "/" : "") +
-				found.groups.end;
-			return newUrl;
-		}
-
-		// Returning undefined skips the url transform.
-	});
-
 	// eleventyConfig.watchIgnores.add("**/*.css.map"); // breaks dev server browser auto refresh
 
 	return {
