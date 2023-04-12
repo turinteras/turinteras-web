@@ -1,0 +1,22 @@
+---js
+{
+	layout: "layouts/itineraryList.njk",
+	eleventyNavigation: {
+		key: "Itinerarios",
+		order: 2,
+	},
+	pagination: {
+		data: "collections.sortedItineraries",
+		size: 4,
+		before: function(paginationData, fullData) {
+			/*
+			#################################################
+			#### IMPORTANT CHANGE LANGUAGE IN LINE BELOW ####
+			#################################################
+			*/
+			const language = 'es'; // Change for the correct one es, en, fr, ja
+			return paginationData.filter(item => item.data.page.lang == language);
+		}
+	}
+}
+---

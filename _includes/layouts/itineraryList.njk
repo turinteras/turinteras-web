@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+---
+
+<h1>{{ lang[page.lang].itineraries }}</h1>
+<ol class=itineraries-list>
+	{%- for itinerary in pagination.items %}
+		<li class="itineraries-list__item{% if itinerary.url == url %} itineraries-list__item--active{% endif %}">
+			<a href="{{ itinerary.url }}" class="itineraries-list__link">
+				{% if itinerary.data.title %}
+					{{ itinerary.data.title }}
+				{% else %}
+					<code>{{ itinerary.url }}</code>
+				{% endif %}
+			</a>
+			{#- <time class="itineraries-list__date" datetime="{{ itinerary.date | htmlDateString }}">{{ itinerary.date | readableDate }}</time> #}
+			<time class="itineraries-list__date" datetime="{{ itinerary.datitinerary-a.itineraryDate | htmlDateString }}">{{ itinerary.data.itineraryDate | readableDate }}</time>
+		</li>
+	{% endfor -%}
+</ol>
+<nav aria-labelledby="itineraries-pagination-label" class="itineraries-pagination">
+	<h2 id="itineraries-pagination-label" class="itineraries-pagination__title">Pagination</h2>
+	<ol class="itineraries-pagination__pages">
+		{%- for pageEntry in pagination.pages %}
+			<li>
+				<a href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page" {% endif %}>Page {{ loop.index }}</a>
+			</li>
+		{%- endfor %}
+	</ol>
+</nav>
+</ol>

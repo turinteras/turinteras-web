@@ -16,17 +16,21 @@ layout: layouts/base.njk
 	{%- if collections.itineraries %}
 		{%- set previousItinerary = collections.itineraries | getPreviousCollectionItem %}
 		{%- set nextItinerary = collections.itineraries | getNextCollectionItem %}
+		{#
 		{%- if nextItinerary or previousItinerary %}
 			<ul class="itinerary__nextprev">
 				{%- if previousItinerary %}
-					<li>Itinerario anterior: <a href="{{ previousItinerary.url }}">{{ previousItinerary.data.title }}</a>
+					<li>{{ lang[page.lang].previousItinerary }}
+						<a href="{{ previousItinerary.url }}">{{ previousItinerary.data.title }}</a>
 					</li>
 				{% endif %}
 				{%- if nextItinerary %}
-					<li>Itinerario siguiente: <a href="{{ nextItinerary.url }}">{{ nextItinerary.data.title }}</a>
+					<li>{{ lang[page.lang].nextItinerary }}
+						<a href="{{ nextItinerary.url }}">{{ nextItinerary.data.title }}</a>
 					</li>
 				{% endif %}
 			</ul>
 		{%- endif %}
+		#}
 	{%- endif %}
 </article>

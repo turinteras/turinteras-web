@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ metadata.language }}">
+<html lang="{{ page.lang }}" dir="{{ lang[page.lang].dir or 'ltr' }}">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,17 @@
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
 
+		<link rel="alternate" hreflang="{{ page.lang }}" href="{{ meta.url }}{{ page.url }}"/>
+
+		{% for link in page.url | locale_links %}
+			<link
+				rel="alternate"
+				hreflang="{{ link.lang }}"
+				href="{{ meta.url }}{{ link.url }}"/>
+		{% endfor %}
+
+		<link rel="canonical" href="{{ meta.url }}{{ page.url }}"/>
+
 		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
 
 		{%- css %}{% include "public/css/styles.css" %}{% endcss %}
@@ -18,7 +29,7 @@
 		</style>
 	</head>
 	<body>
-		<a href="#skip" class="visually-hidden">Ir al contenido principal</a>
+		<a href="#skip" class="visually-hidden">{{ lang[page.lang].mainContentSkip }}</a>
 
 		<header>
 			{#- <a href="/" class="home-link">{{ metadata.title }}</a> #}
@@ -26,30 +37,43 @@
 			"Logo de Turinteras",
 			"logo" %}
 			<nav>
-				<h2 class="visually-hidden">Menú de navegación</h2>
+				<h2 class="visually-hidden">{{ lang[page.lang].navigationMenu }}</h2>
 				<ul class="nav">
-					{%- for entry in collections.all | eleventyNavigation %}
+					{%- for entry in collections.all | langFilter(page.lang) | eleventyNavigation %}
 						<li class="nav__item">
 							<a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
 						</li>
 					{%- endfor %}
 				</ul>
 			</nav>
-			<label for="lang" class="visually-hidden">Idioma</label>
+			{#
+			<label for="lang" class="visually-hidden">{{ lang[page.lang].language }}</label>
 			<select id="lang" class="lang-select">
 				<option default>Español</option>
 				<option>English</option>
 				<option>Français</option>
-				<option>Deustch</option>
 				<option>日本語</option>
 			</select>
+			#}
 		</header>
 
 		<main id="skip">
 			{{ content | safe }}
 		</main>
 
-		<footer></footer>
+		<footer>
+			<nav>
+				<a href="{{ page.url }}" lang="{{ page.lang }}" hreflang="{{ page.lang }}">
+					{{ page.lang | upper }}
+				</a>
+
+				{% for link in page.url | locale_links %}
+					<a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
+						{{ link.lang | upper }}
+					</a>
+				{% endfor %}
+			</nav>
+		</footer>
 
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
 	</body>

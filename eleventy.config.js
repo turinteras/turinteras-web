@@ -4,11 +4,16 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+const { EleventyI18nPlugin } = require("@11ty/eleventy");
 
 module.exports = function (eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/",
+	});
+
+	eleventyConfig.addPlugin(EleventyI18nPlugin, {
+		defaultLanguage: "en",
 	});
 
 	// Watch content images for the image pipeline.
@@ -38,6 +43,12 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
 			"yyyy-LL-dd"
 		);
+	});
+
+	eleventyConfig.addFilter("langFilter", function (collection, lang) {
+		if (!lang) return collection;
+		const filtered = collection.filter((c) => c.data.page.lang == lang);
+		return filtered;
 	});
 
 	// Features to make your build faster (when you need them)
