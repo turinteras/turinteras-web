@@ -12,6 +12,10 @@ module.exports = function (eleventyConfig) {
 		"./public/": "/",
 	});
 
+	eleventyConfig.addPassthroughCopy({
+		"./admin/": "/admin",
+	});
+
 	eleventyConfig.addPlugin(EleventyI18nPlugin, {
 		defaultLanguage: "en",
 	});
