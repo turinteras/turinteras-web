@@ -28,7 +28,7 @@ collections:
             }
           - {
                 label: "Publish Date",
-                hint: "Today's date"
+                hint: "Today's date",
                 name: "date",
                 widget: "datetime",
                 date_format: true,
