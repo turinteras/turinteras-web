@@ -7,7 +7,7 @@ layout: layouts/base.njk
 
 	<ul class="itinerary__metadata">
 		<li>
-			<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+			<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate('DDD T', page.lang, 'utc') }}</time>
 		</li>
 	</ul>
 

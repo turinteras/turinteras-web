@@ -10,11 +10,12 @@ layout: layouts/base.njk
 				{% if itinerary.data.title %}
 					{{ itinerary.data.title }}
 				{% else %}
-					<code>{{ itinerary.url }}</code>
+					{{ itinerary.data.itineraryDate | readableDate('DDD T', page.lang, 'utc') }}
+					{# <code>{{ itinerary.url }}</code> #}
 				{% endif %}
 			</a>
 			{#- <time class="itineraries-list__date" datetime="{{ itinerary.date | htmlDateString }}">{{ itinerary.date | readableDate }}</time> #}
-			<time class="itineraries-list__date" datetime="{{ itinerary.datitinerary-a.itineraryDate | htmlDateString }}">{{ itinerary.data.itineraryDate | readableDate }}</time>
+			<time class="itineraries-list__date" datetime="{{ itinerary.datitinerary-a.itineraryDate | htmlDateString }}">{{ itinerary.data.itineraryDate | readableDate('DDD T', page.lang, 'utc') }}</time>
 		</li>
 	{% endfor -%}
 </ol>
