@@ -2,6 +2,27 @@
 	publish = "_site"
 	command = "npm run clean-site && npm run build-sass && npm run build"
 
+#Custom 404 handling
+[[redirects]]
+	from = "/es/*"
+	to = "/es/404.html"
+	status = 404
+
+[[redirects]]
+	from = "/fr/*"
+	to = "/fr/404.html"
+	status = 404
+
+[[redirects]]
+	from = "/ja/*"
+	to = "/ja/404.html"
+	status = 404
+
+[[redirects]]
+	from = "/en/*"
+	to = "/en/404.html"
+	status = 404
+	
 # Content negotiation for home page
 [[redirects]]
 	from = "/"
@@ -51,24 +72,3 @@
 	from = "/*"
 	to = "/en/:splat"
 	status = 302
-
-#Custom 404 handling
-[[redirects]]
-	from = "/es/*"
-	to = "/es/404.html"
-	status = 404
-
-[[redirects]]
-	from = "/fr/*"
-	to = "/fr/404.html"
-	status = 404
-
-[[redirects]]
-	from = "/ja/*"
-	to = "/ja/404.html"
-	status = 404
-
-[[redirects]]
-	from = "/*"
-	to = "/en/404.html"
-	status = 404
