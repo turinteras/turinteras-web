@@ -26,6 +26,7 @@
 		"@11ty/eleventy-plugin-bundle": "^1.0.1",
 		"@11ty/eleventy-plugin-rss": "^1.2.0",
 		"concurrently": "^7.6.0",
+		"eleventy-plugin-heroicons": "^1.1.0",
 		"luxon": "^3.2.1",
 		"prettier": "2.8.4",
 		"sass": "^1.58.3"

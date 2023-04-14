@@ -6,3 +6,5 @@ itineraryDate: 2023-04-19T12:50:00
 ---
 
 Primer Itinerario
+
+![logo](/img/logo.png "logo")

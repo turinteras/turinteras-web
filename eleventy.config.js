@@ -28,6 +28,8 @@ module.exports = function (eleventyConfig) {
 	// App plugins
 	eleventyConfig.addPlugin(require("./eleventy.config.images.js"));
 
+	eleventyConfig.addPlugin(require("eleventy-plugin-heroicons"));
+
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginNavigation);

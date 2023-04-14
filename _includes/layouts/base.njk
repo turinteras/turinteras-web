@@ -22,12 +22,16 @@
 
 		<link rel="canonical" href="{{ meta.url }}{{ page.url }}"/>
 
+		<link rel="stylesheet" href="/css/styles.css">
+
 		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
 
+		{#
 		{%- css %}{% include "public/css/styles.css" %}{% endcss %}
 		<style>
 			{% getBundle "css" %}
 		</style>
+		#}
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">{{ lang[page.lang].mainContentSkip }}</a>

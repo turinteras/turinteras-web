@@ -1,9 +1,10 @@
 ---
 layout: layouts/base.njk
 eleventyNavigation:
-  key: Contact
-  order: 3
+    key: HomeFr
+    order: 1
 ---
-<h1>Contact</h1>
 
-<p>Test</p>
+#French
+
+French info...

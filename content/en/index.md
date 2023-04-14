@@ -4,6 +4,7 @@ eleventyNavigation:
   key: Home 
   order: 1
 ---
-<h1>About Turinteras</h1>
 
-<p>Turinteras info...</p>
+#About Turinteras
+
+Turinteras info...
