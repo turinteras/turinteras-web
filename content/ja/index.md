@@ -1,5 +1,5 @@
 ---
-title: "index"
+cmsTitle: "index"
 ---
 
 # About Turinteras JA
