@@ -51,7 +51,7 @@ collections:
     - name: "pages"
       label: "Pages"
       folder: "/content"
-      identifier_field: "cmsTitle"
+      identifier_field: cms
       i18n: true
       create: false
       delete: false
