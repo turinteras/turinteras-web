@@ -1,11 +1,13 @@
 {
+	"languageName": "日本語",
 	"mainContentSkip": "Skip to main content JA",
 	"navigationMenu": "Navigation menu JA",
-	"language": "Language JA",
-	"itineraries": "Itineraries JA",
+	"languageSelect": "Language select JA",
 	"previousItinerary": "Previous itinerary: JA",
 	"nextItinerary": "Next itinerary: JA",
 	"navHome": "Home JA",
 	"navItineraries": "Itineraries JA",
-	"navContact": "Contact JA"
+	"navContact": "Contact JA",
+	"languageAvailable": "Also available in:",
+	"altLogo": "Turinteras's Logo"
 }

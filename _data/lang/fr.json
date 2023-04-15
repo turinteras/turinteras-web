@@ -1,11 +1,13 @@
 {
+	"languageName": "Français",
 	"mainContentSkip": "Skip to main content FR",
 	"navigationMenu": "Navigation menu FR",
-	"language": "Language FR",
-	"itineraries": "Itineraries FR",
+	"languageSelect": "Language select FR",
 	"previousItinerary": "Previous itinerary: FR",
 	"nextItinerary": "Next itinerary: FR",
 	"navHome": "Home FR",
 	"navItineraries": "Itineraries FR",
-	"navContact": "Contact FR"
+	"navContact": "Contact FR",
+	"languageAvailable": "Also available in:",
+	"altLogo": "Turinteras's Logo"
 }

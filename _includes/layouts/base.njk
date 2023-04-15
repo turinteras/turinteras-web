@@ -36,51 +36,73 @@
 	<body>
 		<a href="#skip" class="visually-hidden">{{ lang[page.lang].mainContentSkip }}</a>
 
-		<header>
-			{#- <a href="/" class="home-link">{{ metadata.title }}</a> #}
-			{% image "public/img/logo.png",
-			"Logo de Turinteras",
-			"logo" %}
+		<header class="container">
+			{# <a href="/">{{ metadata.title }}</a> #}
 			<nav>
+				<ul>
+					<li>
+						{% image "public/img/logo.png",
+						lang[page.lang].altLogo,
+						"logo" %}
+					</li>
+				</ul>
 				<h2 class="visually-hidden">{{ lang[page.lang].navigationMenu }}</h2>
-				<ul class="nav">
+				<ul role="navigation">
 					{%- for entry in collections.all | langFilter(page.lang) | eleventyNavigation %}
-						<li class="nav__item">
+						<li>
 							<a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
 						</li>
 					{%- endfor %}
+					<li>
+						<details role="list">
+							<summary aria-haspopup="listbox">
+								<span class="visually-hidden">{{ lang[page.lang].languageSelect }}</span>
+								<span>
+									{% heroicon "outline",
+									"translate" %}
+									{{ lang[page.lang].languageName }}
+								</span>
+							</summary>
+							<ul role="listbox">
+								{% for link in page.url | locale_links | sort(reverse = false, caseSens = false, lang) %}
+									<li>
+										<a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
+											{{ lang[link.lang].languageName }}
+										</a>
+									</li>
+								{% endfor %}
+							</ul>
+						</details>
+					</li>
 				</ul>
 			</nav>
-			{#
-			<label for="lang" class="visually-hidden">{{ lang[page.lang].language }}</label>
-			<select id="lang" class="lang-select">
-				<option default>Español</option>
-				<option>English</option>
-				<option>Français</option>
-				<option>日本語</option>
-			</select>
-			#}
 		</header>
 
-		<main id="skip">
+		<main id="skip" class="container">
 			{{ content | safe }}
 		</main>
 
-		<footer>
+		{#
+		<footer class="container">
 			<nav>
 				<a href="{{ page.url }}" lang="{{ page.lang }}" hreflang="{{ page.lang }}">
 					{{ page.lang | upper }}
 				</a>
-
-				{% for link in page.url | locale_links %}
-					<a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
-						{{ link.lang | upper }}
-					</a>
-				{% endfor %}
+				<ul>
+					<li>
+						{{ lang[page.lang].languageAvailable }}
+					</li>
+					{% for link in page.url | locale_links | sort(reverse = false, caseSens = false, lang) %}
+						<li>
+							<a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
+								{{ link.lang | upper }}
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
 			</nav>
 		</footer>
-
-		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
+		#}
 
 		<script>
 			if (window.netlifyIdentity) {

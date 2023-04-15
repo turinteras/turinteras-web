@@ -2612,5 +2612,29 @@ textarea,
     transition-duration: 0s !important;
   }
 }
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+html {
+  max-width: 45rem;
+  margin: 0 auto;
+}
+
+nav .logo {
+  height: 2em;
+  width: auto;
+}
+nav details .heroicon {
+  position: relative;
+  top: -1px;
+  height: 1em;
+}
 
 /*# sourceMappingURL=styles.css.map */

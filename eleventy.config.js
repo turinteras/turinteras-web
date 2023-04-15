@@ -28,7 +28,10 @@ module.exports = function (eleventyConfig) {
 	// App plugins
 	eleventyConfig.addPlugin(require("./eleventy.config.images.js"));
 
-	eleventyConfig.addPlugin(require("eleventy-plugin-heroicons"));
+	eleventyConfig.addPlugin(require("eleventy-plugin-heroicons"), {
+		className: "heroicon",
+		errorOnMissing: true,
+	});
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);

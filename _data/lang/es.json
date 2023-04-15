@@ -1,11 +1,13 @@
 {
+	"languageName": "Español",
 	"mainContentSkip": "Ir al contenido principal",
 	"navigationMenu": "Menú de navegación",
-	"language": "Idioma",
-	"itineraries": "Itinerarios",
+	"languageSelect": "Selección de idioma",
 	"previousItinerary": "Itinerario anterior:",
 	"nextItinerary": "Itinerario siguiente:",
 	"navHome": "Inicio",
 	"navItineraries": "Itinerarios",
-	"navContact": "Contacto"
+	"navContact": "Contacto",
+	"languageAvailable": "También disponible en:",
+	"altLogo": "Logo de Turinteras"
 }

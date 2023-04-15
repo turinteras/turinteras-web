@@ -2,10 +2,10 @@
 layout: layouts/base.njk
 ---
 
-<article class="itinerary">
+<article>
 	<h1>{{ title }}</h1>
 
-	<ul class="itinerary__metadata">
+	<ul>
 		<li>
 			<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate('DDD T', page.lang, 'utc') }}</time>
 		</li>
@@ -18,7 +18,7 @@ layout: layouts/base.njk
 		{%- set nextItinerary = collections.itineraries | getNextCollectionItem %}
 		{#
 		{%- if nextItinerary or previousItinerary %}
-			<ul class="itinerary__nextprev">
+			<ul>
 				{%- if previousItinerary %}
 					<li>{{ lang[page.lang].previousItinerary }}
 						<a href="{{ previousItinerary.url }}">{{ previousItinerary.data.title }}</a>
