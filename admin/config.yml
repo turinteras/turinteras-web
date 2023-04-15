@@ -48,3 +48,15 @@ collections:
                 i18n: duplicate,
             }
           - { label: "Body", name: "body", widget: "markdown", i18n: true }
+    - name: "pages"
+      label: "Pages"
+      folder: "/content"
+      i18n: true
+      create: false
+      delete: false
+      extension: "md"
+      fields:
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            i18n: true
