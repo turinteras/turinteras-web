@@ -9,5 +9,8 @@
 	"navItineraries": "Itineraries",
 	"navContact": "Contact",
 	"languageAvailable": "Also available in:",
-	"altLogo": "Turinteras's Logo"
+	"altLogo": "Turinteras's Logo",
+	"error404": "404 ERROR",
+	"message404": "Content not found",
+	"mainPage404": "Go to main page"
 }

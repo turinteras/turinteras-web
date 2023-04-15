@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ page.lang }}" dir="{{ lang[page.lang].dir or 'ltr' }}" id="error404">
+	<head>
+		{% include "head.njk" %}
+	</head>
+	<body>
+
+		<main>
+			<h1>{{ lang[page.lang].error404 }}</h1>
+			<h2>{{ lang[page.lang].message404 }}</h2>
+			<p>
+				<a href="/{{ page.lang }}">{{ lang[page.lang].mainPage404 }}</a>
+			</p>
+		</main>
+
+		{% image "public/img/cat404.png",
+		lang[page.lang].error404 %}
+
+	</body>
+</html>

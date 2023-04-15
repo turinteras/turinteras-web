@@ -18,6 +18,7 @@ layout: layouts/base.njk
 			</a>
 			{#- <time datetime="{{ itinerary.date | htmlDateString }}">{{ itinerary.date | readableDate }}</time> #}
 			<time datetime="{{ itinerary.datitinerary-a.itineraryDate | htmlDateString }}">{{ itinerary.data.itineraryDate | readableDate('DDD T', page.lang, 'utc') }}</time>
+			<p>{{ itinerary.data.description }}</p>
 		</li>
 	{% endfor -%}
 </ul>

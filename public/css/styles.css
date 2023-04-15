@@ -2577,4 +2577,37 @@ main {
   list-style-type: none;
 }
 
+#error404 {
+  width: 100% !important;
+  height: 100vh !important;
+}
+#error404 * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#error404 img {
+  position: absolute;
+  left: 0;
+  height: min(70vh, 100vw);
+  width: auto;
+  bottom: 0;
+}
+#error404 h1,
+#error404 h2,
+#error404 p {
+  font-weight: 400;
+}
+#error404 main {
+  margin: min(1vh, 1rem) 1rem 1rem 1rem !important;
+  width: 100% !important;
+  height: 25vh !important;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+#error404 main > * {
+  margin-bottom: min(1vh, 1rem) !important;
+}
+
 /*# sourceMappingURL=styles.css.map */
