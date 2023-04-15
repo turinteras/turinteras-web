@@ -1,8 +1,11 @@
 {
-	"mainContentSkip": "Skip to main content",
-	"navigationMenu": "Navigation menu",
-	"language": "Language",
-	"itineraries": "Itineraries",
-	"previousItinerary": "Previous itinerary:",
-	"nextItinerary": "Next itinerary:"
+	"mainContentSkip": "Skip to main content JA",
+	"navigationMenu": "Navigation menu JA",
+	"language": "Language JA",
+	"itineraries": "Itineraries JA",
+	"previousItinerary": "Previous itinerary: JA",
+	"nextItinerary": "Next itinerary: JA",
+	"navHome": "Home JA",
+	"navItineraries": "Itineraries JA",
+	"navContact": "Contact JA"
 }

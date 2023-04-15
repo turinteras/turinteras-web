@@ -1,10 +1,3 @@
----
-layout: layouts/base.njk
-eleventyNavigation:
-  key: Home 
-  order: 1
----
+# About Turinteras
 
-#About Turinteras
-
-Turinteras info...
+About Turinteras

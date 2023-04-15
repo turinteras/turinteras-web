@@ -4,5 +4,8 @@
 	"language": "Language",
 	"itineraries": "Itineraries",
 	"previousItinerary": "Previous itinerary:",
-	"nextItinerary": "Next itinerary:"
+	"nextItinerary": "Next itinerary:",
+	"navHome": "Home",
+	"navItineraries": "Itineraries",
+	"navContact": "Contact"
 }

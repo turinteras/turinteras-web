@@ -4,5 +4,8 @@
 	"language": "Idioma",
 	"itineraries": "Itinerarios",
 	"previousItinerary": "Itinerario anterior:",
-	"nextItinerary": "Itinerario siguiente:"
+	"nextItinerary": "Itinerario siguiente:",
+	"navHome": "Inicio",
+	"navItineraries": "Itinerarios",
+	"navContact": "Contacto"
 }

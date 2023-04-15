@@ -1,10 +1,3 @@
----
-layout: layouts/base.njk
-eleventyNavigation:
-    key: HomeFr
-    order: 1
----
+# About Turinteras FR
 
-#French
-
-French info...
+About Turinteras FR

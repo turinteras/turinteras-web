@@ -1,10 +1,3 @@
----
-layout: layouts/base.njk
-eleventyNavigation:
-    key: HomeJa
-    order: 1
----
+# About Turinteras JA
 
-#Japanese
-
-Japanese info...
+About Turinteras JA
