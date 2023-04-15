@@ -1,7 +1,8 @@
 ---
-cms: "index"
+cms: index
 ---
+# トゥリンテラスについて
 
-# About Turinteras JA
+Turinteras "のウェブサイトへようこそ。私たちは、The Open Faculty（ムルシア大学観光学部）の観光学科の学生のグループです。これは、より包括的な観光を実現し、アクセシブルな旅程を通じて障害者の方々との距離を縮めるために、私たちが実施した取り組みです。
 
-About Turinteras JA
+![私たちのチーム](/img/imagen_index.jfif)
