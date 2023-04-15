@@ -2,21 +2,20 @@
 layout: layouts/base.njk
 ---
 
-<article>
-	<h1>{{ title }}</h1>
+<h1>{{ title }}</h1>
 
-	<ul>
-		<li>
-			<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate('DDD T', page.lang, 'utc') }}</time>
-		</li>
-	</ul>
+<ul>
+	<li>
+		<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate('DDD T', page.lang, 'utc') }}</time>
+	</li>
+</ul>
 
-	{{ content | safe }}
+{{ content | safe }}
 
-	{%- if collections.itineraries %}
-		{%- set previousItinerary = collections.itineraries | getPreviousCollectionItem %}
-		{%- set nextItinerary = collections.itineraries | getNextCollectionItem %}
-		{#
+{%- if collections.itineraries %}
+	{%- set previousItinerary = collections.itineraries | getPreviousCollectionItem %}
+	{%- set nextItinerary = collections.itineraries | getNextCollectionItem %}
+	{#
 		{%- if nextItinerary or previousItinerary %}
 			<ul>
 				{%- if previousItinerary %}
@@ -32,5 +31,4 @@ layout: layouts/base.njk
 			</ul>
 		{%- endif %}
 		#}
-	{%- endif %}
-</article>
+{%- endif %}

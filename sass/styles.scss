@@ -1,4 +1,6 @@
-@import "pico/pico.scss";
+$enable-responsive-spacings: false;
+
+@import "../pico/pico.scss";
 
 // https://www.a11yproject.com/posts/how-to-hide-content/
 .visually-hidden {
@@ -28,5 +30,17 @@ nav {
 			top: -1px;
 			height: 1em;
 		}
+	}
+}
+
+main {
+	padding: 0 !important;
+}
+
+.itinerary-list {
+	padding: 0;
+
+	li {
+		list-style-type: none;
 	}
 }

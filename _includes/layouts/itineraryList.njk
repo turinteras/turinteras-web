@@ -1,9 +1,11 @@
 ---
 layout: layouts/base.njk
 ---
-
+{#
 <h1>{{ lang[page.lang].navItineraries }}</h1>
-<ol>
+#}
+
+<ul class="itinerary-list">
 	{%- for itinerary in pagination.items %}
 		<li>
 			<a href="{{ itinerary.url }}">
@@ -18,7 +20,7 @@ layout: layouts/base.njk
 			<time datetime="{{ itinerary.datitinerary-a.itineraryDate | htmlDateString }}">{{ itinerary.data.itineraryDate | readableDate('DDD T', page.lang, 'utc') }}</time>
 		</li>
 	{% endfor -%}
-</ol>
+</ul>
 <nav aria-labelledby="itineraries-pagination-label">
 	<h2 id="itineraries-pagination-label">Pagination</h2>
 	<ol>

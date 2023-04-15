@@ -1,15 +1,13 @@
 {
-    "mainContentSkip": "Passer au contenu principal",
-    "navigationMenu": "Le menu de navigation",
-    "language": "Langue",
-    "itineraries": "Itinéraires",
-    "previousItinerary": "Itinéraire précédent :",
-    "nextItinerary": "Prochain itinéraire :",
-    "navHome": "Accueil",
-    "navItineraries": "Itinéraires",
-    "navContact": "Contact",
-    "languageName": "Français",
-    "languageSelect": "Sélection de la langue",
-    "languageAvailable": "Également disponible en :",
-    "altLogo": "Logo de Turinteras"
+	"mainContentSkip": "Passer au contenu principal",
+	"navigationMenu": "Le menu de navigation",
+	"previousItinerary": "Itinéraire précédent :",
+	"nextItinerary": "Prochain itinéraire :",
+	"navHome": "Accueil",
+	"navItineraries": "Itinéraires",
+	"navContact": "Contact",
+	"languageName": "Français",
+	"languageSelect": "Sélection de la langue",
+	"languageAvailable": "Également disponible en :",
+	"altLogo": "Logo de Turinteras"
 }
