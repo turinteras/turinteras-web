@@ -48,6 +48,15 @@ collections:
                 i18n: duplicate,
             }
           - { label: "Body", name: "body", widget: "markdown", i18n: true }
+          - {
+                label: "Thumbnail",
+                name: "thumbnail",
+                widget: "image",
+                media_folder: "/public/img",
+                default: "public/img/logo.png",
+                allow_multiple: false,
+                choose_url: false,
+            }
     - name: "pages"
       label: "Pages"
       folder: "/content"

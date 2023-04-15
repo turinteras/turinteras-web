@@ -50,11 +50,10 @@ module.exports = function (eleventyConfig) {
 		}
 	);
 
-	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+	eleventyConfig.addFilter("htmlDateString", (dateObj, time = false) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-			"yyyy-LL-dd"
-		);
+		const format = time ? "yyyy-LL-dd HH:mm" : "yyyy-LL-dd";
+		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(format);
 	});
 
 	eleventyConfig.addFilter("langFilter", function (collection, lang) {

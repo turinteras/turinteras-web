@@ -32,6 +32,68 @@
   margin-bottom: min(1vh, 1rem) !important;
 }
 
+.itinerary-card {
+  text-decoration: none;
+  --color: var(--color);
+  color: var(--color);
+}
+.itinerary-card:hover, .itinerary-card:active, .itinerary-card:focus {
+  --color: var(--color);
+  --text-decoration: none;
+  transition: unset;
+}
+.itinerary-card article {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  min-height: 10rem;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+.itinerary-card article:hover, .itinerary-card article:active, .itinerary-card article:focus {
+  transform: scale(1.02);
+}
+.itinerary-card .itinerary-card__content {
+  padding: 0.25em 0;
+  margin: 0;
+  display: flex;
+  row-gap: 0.1em;
+  flex-direction: column;
+  width: 100%;
+}
+.itinerary-card .itinerary-card__content > * {
+  padding: 0 0.25em 0 0.6em;
+}
+.itinerary-card .itinerary-card__content .itinerary-card__content__name {
+  font-weight: 600;
+}
+.itinerary-card .itinerary-card__content .itinerary-card__content__date {
+  font-size: smaller;
+}
+.itinerary-card .itinerary-card__content .itinerary-card__content__description {
+  width: 100%;
+  border-top-style: dashed;
+  border-top-width: 1px;
+}
+.itinerary-card .itinerary-card__image {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 30%;
+}
+.itinerary-card .itinerary-card__image picture {
+  width: auto;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+.itinerary-card .itinerary-card__image picture img {
+  height: 100%;
+  object-fit: cover;
+}
+
 /*!
  * Pico CSS v1.5.9 (https://picocss.com)
  * Copyright 2019-2023 - Licensed under MIT
@@ -2604,13 +2666,6 @@ nav details .heroicon {
 
 main {
   padding: 0 !important;
-}
-
-.itinerary-list {
-  padding: 0;
-}
-.itinerary-list li {
-  list-style-type: none;
 }
 
 a[aria-current]:not([aria-current=false]) {

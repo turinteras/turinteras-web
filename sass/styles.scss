@@ -1,4 +1,5 @@
 @use "error404";
+@use "itineraryList";
 
 $enable-responsive-spacings: false;
 @import "../pico/pico.scss";
@@ -42,14 +43,6 @@ nav {
 
 main {
 	padding: 0 !important;
-}
-
-.itinerary-list {
-	padding: 0;
-
-	li {
-		list-style-type: none;
-	}
 }
 
 a[aria-current]:not([aria-current="false"]) {

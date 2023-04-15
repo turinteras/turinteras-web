@@ -5,23 +5,35 @@ layout: layouts/base.njk
 <h1>{{ lang[page.lang].navItineraries }}</h1>
 #}
 
-<ul class="itinerary-list">
-	{%- for itinerary in pagination.items %}
-		<li>
-			<a href="{{ itinerary.url }}">
-				{% if itinerary.data.title %}
-					{{ itinerary.data.title }}
+{%- for itinerary in pagination.items %}
+	<a href="{{ itinerary.url }}" class="itinerary-card">
+		<article>
+			<div class="itinerary-card__content">
+				<span class="itinerary-card__content__name">
+					{% if itinerary.data.title %}
+						{{ itinerary.data.title }}
+					{% else %}
+						{{ itinerary.data.itineraryDate | readableDate('DDD T', page.lang, 'utc') }}
+						{# <code>{{ itinerary.url }}</code> #}
+					{% endif %}
+				</span>
+				{#- <time datetime="{{ itinerary.date | htmlDateString }}">{{ itinerary.date | readableDate }}</time> #}
+				<time datetime="{{ itinerary.data.itineraryDate | htmlDateString(true) }}" class="itinerary-card__content__date">{{ itinerary.data.itineraryDate | readableDate('DDD T', page.lang, 'utc') }}</time>
+				<p class="itinerary-card__content__description">{{ itinerary.data.description }}</p>
+			</div>
+			<div class=itinerary-card__image>
+				{% if itinerary.data.thumbnail %}
+					{{ itinerary.data.thumbnail }}
+					{% image itinerary.data.thumbnail,
+					lang[page.lang].altItineraryCardThumbnail %}
 				{% else %}
-					{{ itinerary.data.itineraryDate | readableDate('DDD T', page.lang, 'utc') }}
-					{# <code>{{ itinerary.url }}</code> #}
+					{% image "public/img/catedral.jpg",
+					lang[page.lang].altItineraryCardThumbnail %}
 				{% endif %}
-			</a>
-			{#- <time datetime="{{ itinerary.date | htmlDateString }}">{{ itinerary.date | readableDate }}</time> #}
-			<time datetime="{{ itinerary.datitinerary-a.itineraryDate | htmlDateString }}">{{ itinerary.data.itineraryDate | readableDate('DDD T', page.lang, 'utc') }}</time>
-			<p>{{ itinerary.data.description }}</p>
-		</li>
-	{% endfor -%}
-</ul>
+			</div>
+		</article>
+	</a>
+{% endfor -%}
 <nav aria-labelledby="itineraries-pagination-label">
 	<h2 id="itineraries-pagination-label">Pagination</h2>
 	<ol>
