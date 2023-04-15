@@ -1,13 +1,15 @@
 {
-	"languageName": "日本語",
-	"mainContentSkip": "Skip to main content JA",
-	"navigationMenu": "Navigation menu JA",
-	"languageSelect": "Language select JA",
-	"previousItinerary": "Previous itinerary: JA",
-	"nextItinerary": "Next itinerary: JA",
-	"navHome": "Home JA",
-	"navItineraries": "Itineraries JA",
-	"navContact": "Contact JA",
-	"languageAvailable": "Also available in:",
-	"altLogo": "Turinteras's Logo"
+    "mainContentSkip": "メインコンテンツへスキップ",
+    "navigationMenu": "ナビゲーションメニュー",
+    "language": "言語",
+    "itineraries": "旅程",
+    "previousItinerary": "これまでの旅程：",
+    "nextItinerary": "次の旅程です：",
+    "navHome": "ホーム",
+    "navItineraries": "旅程",
+    "navContact": "連絡先",
+    "languageName": "日本語",
+    "languageSelect": "言語選択",
+    "languageAvailable": "でもご利用いただけます：",
+    "altLogo": "トゥリンテラス社のロゴマーク"
 }
