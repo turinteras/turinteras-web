@@ -1,5 +1,6 @@
-$enable-responsive-spacings: false;
+@use "error404";
 
+$enable-responsive-spacings: false;
 @import "../pico/pico.scss";
 
 // https://www.a11yproject.com/posts/how-to-hide-content/
@@ -24,6 +25,12 @@ nav {
 		width: auto;
 	}
 
+	#themeSwitch {
+		.heroicon {
+			height: 1em;
+		}
+	}
+
 	details {
 		.heroicon {
 			position: relative;
@@ -45,41 +52,6 @@ main {
 	}
 }
 
-#error404 {
-	width: 100% !important;
-	height: 100vh !important;
-
-	* {
-		margin: 0 !important;
-		padding: 0 !important;
-	}
-
-	img {
-		position: absolute;
-		left: 0;
-		height: min(70vh, 100vw);
-		width: auto;
-		bottom: 0;
-	}
-
-	h1,
-	h2,
-	p {
-		font-weight: 400;
-	}
-
-	main {
-		margin: min(1vh, 1rem) 1rem 1rem 1rem !important;
-
-		width: 100% !important;
-		height: 25vh !important;
-		display: flex;
-		align-items: center;
-		justify-items: center;
-		flex-direction: column;
-
-		& > * {
-			margin-bottom: min(1vh, 1rem) !important;
-		}
-	}
+a[aria-current]:not([aria-current="false"]) {
+	text-decoration: underline;
 }

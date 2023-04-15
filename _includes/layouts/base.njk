@@ -44,6 +44,10 @@
 							</ul>
 						</details>
 					</li>
+					<li>
+						<a href="#" role="button" id="themeSwitch">{% heroicon "outline",
+							"sun" %}</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -73,6 +77,18 @@
 			</nav>
 		</footer>
 		#}
+
+		<script defer>
+			document
+				.getElementById('themeSwitch')
+				.addEventListener('click', () => {
+					const htmlElement = document.querySelector('html');
+					const newTheme = htmlElement.getAttribute('data-theme') == 'dark'
+						? 'light'
+						: 'dark';
+					htmlElement.setAttribute('data-theme', newTheme);
+				})
+		</script>
 
 		<script>
 			if (window.netlifyIdentity) {
