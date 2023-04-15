@@ -56,6 +56,7 @@ collections:
                 default: "public/img/logo.png",
                 allow_multiple: false,
                 choose_url: false,
+                i18n: duplicate,
             }
     - name: "pages"
       label: "Pages"
