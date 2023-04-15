@@ -9,7 +9,7 @@ public_folder: "/img" # The src attribute for uploaded media will begin with /im
 i18n:
     structure: multiple_folders
     locales: [en, es, fr, ja]
-    default_locale: en
+    default_locale: es
 
 collections:
     - name: "itinerary" # Used in routes, e.g., /admin/collections/blog
@@ -47,7 +47,6 @@ collections:
                 picker_utc: false,
                 i18n: duplicate,
             }
-          - { label: "Body", name: "body", widget: "markdown", i18n: true }
           - {
                 label: "Thumbnail",
                 name: "thumbnail",
@@ -58,6 +57,16 @@ collections:
                 choose_url: false,
                 i18n: duplicate,
             }
+          - {
+                label: "Test",
+                name: "test",
+                widget: "image",
+                media_folder: "img",
+                allow_multiple: true,
+                choose_url: false,
+                i18n: duplicate,
+            }
+          - { label: "Body", name: "body", widget: "markdown", i18n: true }
     - name: "pages"
       label: "Pages"
       folder: "/content"
