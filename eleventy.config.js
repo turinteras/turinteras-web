@@ -62,6 +62,13 @@ module.exports = function (eleventyConfig) {
 		return filtered;
 	});
 
+	eleventyConfig.addFilter("imageUrlPublic", (url) => {
+		if (url.startsWith("/public")) {
+			return url.substring(7);
+		}
+		return url;
+	});
+
 	// Features to make your build faster (when you need them)
 
 	// If your passthrough copy gets heavy and cumbersome, add this line

@@ -35,3 +35,14 @@ layout: layouts/base.njk
 		{%- endif %}
 		#}
 {%- endif %}
+
+{%- if imageGalleryList %}
+	<h2 class="gallery__title">{{ lang[page.lang].galleryTitle }}</h2>
+	<div class="gallery">
+		{%- for image in imageGalleryList %}
+			<a class="gallery__link" href="{{ image | imageUrlPublic }}" data-lightbox="itinerary-gallery">
+				{% image image, lang[page.lang].altItineraryImage, "gallery__image"%}
+			</a>
+		{% endfor -%}
+	</div>
+{%- endif %}

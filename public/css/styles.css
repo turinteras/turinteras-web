@@ -3023,6 +3023,16 @@ header > nav > ul:not(:first-child) > li {
   float: right;
 }
 
+.gallery {
+  column-count: 3;
+  column-gap: 1em;
+}
+.gallery .gallery__image {
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -3062,6 +3072,28 @@ a[aria-current]:not([aria-current=false]) {
 
 h1 {
   margin-bottom: 1.5rem;
+}
+
+.container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#lightbox a {
+  padding: 0;
+  border: 0;
+  border: initial;
+  border-radius: initial;
+  box-shadow: initial;
+  color: initial;
+  font-weight: initial;
+  font-size: initial;
+  line-height: initial;
+  text-align: initial;
+  text-decoration: none;
+  pointer-events: auto;
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
