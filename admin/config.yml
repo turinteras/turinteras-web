@@ -36,7 +36,7 @@ collections:
                 time_format: false,
                 format: "YYYY-MM-DD",
                 picker_utc: true,
-                i18n: duplicate,
+                i18n: "duplicate",
             }
           - {
                 label: "Itinerary Date",
@@ -46,7 +46,7 @@ collections:
                 time_format: true,
                 format: "YYYY-MM-DDTHH:mm:00",
                 picker_utc: false,
-                i18n: duplicate,
+                i18n: "duplicate",
             }
           - {
                 label: "Thumbnail",
@@ -55,13 +55,13 @@ collections:
                 media_folder: "/public/img",
                 allow_multiple: false,
                 choose_url: false,
-                i18n: duplicate,
+                i18n: "duplicate",
                 required: false,
             }
           - label: "Image gallery"
             name: "imageGalleryList"
             widget: "list"
-            i18n: duplicate
+            i18n: "duplicate"
             required: false
             summary: "{{fields.imageGallery}}"
             field:
@@ -72,7 +72,7 @@ collections:
                     media_folder: "/public/img",
                     allow_multiple: false,
                     choose_url: false,
-                    i18n: duplicate,
+                    i18n: "duplicate",
                     required: false,
                 }
           - { label: "Body", name: "body", widget: "markdown", i18n: true }
