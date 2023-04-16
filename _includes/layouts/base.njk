@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ page.lang }}" dir="{{ lang[page.lang].dir or 'ltr' }}">
+<html lang="{{ page.lang }}" dir="{{ lang[page.lang].dir or 'ltr' }}" data-theme="light">
 	<head>
 		{% include "head.njk" %}
 	</head>
@@ -11,9 +11,12 @@
 			<nav>
 				<ul>
 					<li>
-						{% image "public/img/logo.png",
+						{% image "public/img/logoTransparente.png",
 						lang[page.lang].altLogo,
 						"logo" %}
+					</li>
+					<li>
+					Turismo sin fronteras
 					</li>
 				</ul>
 				<h2 class="visually-hidden">{{ lang[page.lang].navigationMenu }}</h2>

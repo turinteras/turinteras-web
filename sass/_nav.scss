@@ -1,4 +1,9 @@
 header {
+	//TODO
+	li {
+		font-weight: 700;
+	}
+
 	& > nav {
 		#themeSwitch {
 			.heroicon {
@@ -18,7 +23,7 @@ header {
 
 		& > ul:first-child {
 			margin: calc(var(--header-padding) * -1) 0 0 0 !important;
-			li {
+			li:first-child {
 				padding: 0;
 				height: 100%;
 				display: flex;
@@ -31,6 +36,11 @@ header {
 					width: auto;
 					border-radius: 5px;
 				}
+			}
+
+			li:nth-child(2) {
+				color: var(--dark-blue);
+				font-size: 130%;
 			}
 		}
 

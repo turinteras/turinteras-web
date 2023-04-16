@@ -1,6 +1,33 @@
 @use "_latofonts.css";
 
+//TODO
+$primary-hue: 129;
+$grey-hue: 129;
+
+$grey-50: #183a1d;
+$grey-100: #183a1d;
+$grey-200: #183a1d;
+$grey-300: #183a1d;
+$grey-400: #183a1d;
+$grey-500: #183a1d;
+$grey-600: #183a1d;
+$grey-700: #183a1d;
+$grey-800: #183a1d;
+$grey-900: #183a1d;
+
+$primary-50: #3d6ddb;
+$primary-100: #3d6ddb;
+$primary-200: #3d6ddb;
+$primary-300: #3d6ddb;
+$primary-400: #3d6ddb;
+$primary-500: #3d6ddb;
+$primary-600: #3d6ddb;
+$primary-700: #3d6ddb;
+$primary-800: #3d6ddb;
+$primary-900: #3d6ddb;
+
 $enable-responsive-spacings: false;
+$white: #fefbe9;
 @import "../pico/pico.scss";
 
 @import "error404";
@@ -10,6 +37,12 @@ $enable-responsive-spacings: false;
 @import "itinerary";
 
 $font-stack: LatoWeb, -apple-system, system-ui, sans-serif;
+
+:root {
+	--dark-green: #183a1d;
+	--dark-blue: #3d6ddb;
+	background-color: var(--background-color);
+}
 
 // https://www.a11yproject.com/posts/how-to-hide-content/
 .visually-hidden {
