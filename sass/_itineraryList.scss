@@ -11,6 +11,10 @@
 		transition: unset;
 	}
 
+	article:first-child {
+		margin-top: 0;
+	}
+
 	article {
 		padding: 0;
 		margin: 1.5rem 0;
@@ -43,7 +47,7 @@
 		}
 
 		.itinerary-card__content__name {
-			font-weight: 600;
+			font-weight: 700;
 		}
 
 		.itinerary-card__content__date {

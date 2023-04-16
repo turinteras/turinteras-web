@@ -1,3 +1,5 @@
+@use "_latofonts.css";
+
 $enable-responsive-spacings: false;
 @import "../pico/pico.scss";
 
@@ -5,6 +7,9 @@ $enable-responsive-spacings: false;
 @import "itineraryList";
 @import "nav";
 @import "socialMedia";
+@import "itinerary";
+
+$font-stack: LatoWeb, -apple-system, system-ui, sans-serif;
 
 // https://www.a11yproject.com/posts/how-to-hide-content/
 .visually-hidden {
@@ -18,17 +23,21 @@ $enable-responsive-spacings: false;
 }
 
 html {
+	--header-padding: 0.8rem;
+	font-family: $font-stack !important;
 	max-width: 45rem;
-	margin: 0 auto;
-	padding: 0.5rem 1rem 1.5rem 1rem;
+	margin: var(--header-padding) auto 1.5rem auto;
+	padding: 0 1rem 0 1rem;
 }
 
 header {
-	padding: 0 !important;
+	padding: 0 0 0 0 !important;
+	margin: 0 0 var(--header-padding) 0 !important;
 }
 
 main {
-	padding: 2rem 0 0.5rem 0 !important;
+	margin: 2rem 0 0.5rem 0 !important;
+	padding: 0 0 0 0 !important;
 }
 
 header {

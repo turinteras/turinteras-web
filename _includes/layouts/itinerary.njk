@@ -2,13 +2,14 @@
 layout: layouts/base.njk
 ---
 
-<h1>{{ title }}</h1>
-
-<ul>
+<ul class="itinerary-data">
+	<h1 class="itinerary-title">{{ title }}</h1>
 	<li>
 		<time datetime="{{ itineraryDate | htmlDateString(true) }}">{{ itineraryDate | readableDate('DDD T', page.lang, 'utc') }}</time>
 	</li>
 </ul>
+
+<hr/>
 
 {{ content | safe }}
 
