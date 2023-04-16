@@ -61,7 +61,7 @@ collections:
           - label: "Image gallery"
             name: "imageGalleryList"
             widget: "list"
-            i18n: "duplicate"
+            i18n: true
             required: false
             summary: "{{fields.imageGallery}}"
             field:
