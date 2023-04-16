@@ -25,6 +25,7 @@ collections:
                 name: "description",
                 widget: "string",
                 i18n: true,
+                required: false,
             }
           - {
                 label: "Publish Date",
@@ -52,19 +53,20 @@ collections:
                 name: "thumbnail",
                 widget: "image",
                 media_folder: "/public/img",
-                default: "public/img/logo.png",
                 allow_multiple: false,
                 choose_url: false,
                 i18n: duplicate,
+                required: false,
             }
           - {
-                label: "Test",
-                name: "test",
+                label: "Image galery",
+                name: "imageGalery",
                 widget: "image",
-                media_folder: "img",
+                media_folder: "/public/img",
                 allow_multiple: true,
                 choose_url: false,
                 i18n: duplicate,
+                required: false,
             }
           - { label: "Body", name: "body", widget: "markdown", i18n: true }
     - name: "pages"
