@@ -14,9 +14,9 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addAsyncShortcode(
 		"image",
 		async function imageShortcode(src, alt, className, id, widths, sizes) {
-			let formats = ["avif", "webp", "auto"];
+			//let formats = ["avif", "webp", "auto"];
 			//Avif is resource intensive
-			//let formats = ["webp", "auto"];
+			let formats = ["webp", "auto"];
 			let file;
 			if (src.startsWith("./")) {
 				file = relativeToInputPath(this.page.inputPath, src);
