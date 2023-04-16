@@ -16,5 +16,10 @@
 	"message404": "コンテンツが見つかりません",
 	"mainPage404": "メインページに戻る",
 	"altItineraryCardThumbnail": "Itinerary thumbnail",
-	"paginationPage": "Page"
+	"paginationPage": "Page",
+	"contactMail": "Email",
+	"contactInstagram": "Instagram",
+	"contactTiktok": "Tiktok",
+	"contactTwitter": "Twitter",
+	"contactFacebook": "Facebook"
 }

@@ -1,9 +1,10 @@
-@use "error404";
-@use "itineraryList";
-@use "nav";
-
 $enable-responsive-spacings: false;
 @import "../pico/pico.scss";
+
+@import "error404";
+@import "itineraryList";
+@import "nav";
+@import "socialMedia";
 
 // https://www.a11yproject.com/posts/how-to-hide-content/
 .visually-hidden {
@@ -27,7 +28,7 @@ header {
 }
 
 main {
-	padding: 0.5rem 0 !important;
+	padding: 2rem 0 0.5rem 0 !important;
 }
 
 header {
@@ -37,4 +38,8 @@ header {
 
 a[aria-current]:not([aria-current="false"]) {
 	text-decoration: underline;
+}
+
+h1 {
+	margin-bottom: 1.5rem;
 }

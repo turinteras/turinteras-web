@@ -16,5 +16,10 @@
 	"message404": "Content not found",
 	"mainPage404": "Go to main page",
 	"altItineraryCardThumbnail": "Itinerary thumbnail",
-	"paginationPage": "Page"
+	"paginationPage": "Page",
+	"contactMail": "Email",
+	"contactInstagram": "Instagram",
+	"contactTiktok": "Tiktok",
+	"contactTwitter": "Twitter",
+	"contactFacebook": "Facebook"
 }

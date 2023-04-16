@@ -1,129 +1,4 @@
 @charset "UTF-8";
-#error404 {
-  width: 100% !important;
-  height: 100vh !important;
-}
-#error404 * {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-#error404 img {
-  position: absolute;
-  left: 0;
-  height: min(70vh, 100vw);
-  width: auto;
-  bottom: 0;
-}
-#error404 h1,
-#error404 h2,
-#error404 p {
-  font-weight: 400;
-}
-#error404 main {
-  margin: min(1vh, 1rem) 1rem 1rem 1rem !important;
-  width: 100% !important;
-  height: 25vh !important;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  flex-direction: column;
-}
-#error404 main > * {
-  margin-bottom: min(1vh, 1rem) !important;
-}
-
-.itinerary-card {
-  text-decoration: none;
-  --color: var(--color);
-  color: var(--color);
-}
-.itinerary-card:hover, .itinerary-card:active, .itinerary-card:focus {
-  --color: var(--color);
-  --text-decoration: none;
-  transition: unset;
-}
-.itinerary-card article {
-  padding: 0;
-  margin: 1.5rem 0;
-  display: flex;
-  justify-content: space-between;
-  min-height: 10rem;
-  overflow: hidden;
-  border-radius: 10px;
-  transition: transform 0.2s ease-in-out;
-}
-.itinerary-card article:hover, .itinerary-card article:active, .itinerary-card article:focus {
-  transform: scale(1.02);
-}
-.itinerary-card .itinerary-card__content {
-  padding: 0.25em 0;
-  margin: 0;
-  display: flex;
-  row-gap: 0.1em;
-  flex-direction: column;
-  width: 100%;
-}
-.itinerary-card .itinerary-card__content > * {
-  padding: 0 0.25em 0 0.6em;
-}
-.itinerary-card .itinerary-card__content .itinerary-card__content__name {
-  font-weight: 600;
-}
-.itinerary-card .itinerary-card__content .itinerary-card__content__date {
-  font-size: smaller;
-}
-.itinerary-card .itinerary-card__content .itinerary-card__content__description {
-  width: 100%;
-  padding-top: 0.2em;
-  border-top-style: dashed;
-  border-top-width: 1px;
-}
-.itinerary-card .itinerary-card__image {
-  padding: 0;
-  margin: 0;
-  position: relative;
-  width: 30%;
-}
-.itinerary-card .itinerary-card__image picture {
-  width: auto;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-}
-.itinerary-card .itinerary-card__image picture img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.pagination {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  column-gap: 1.5em;
-}
-.pagination li {
-  padding: 0;
-  margin: 0 0.1em;
-}
-.pagination li a {
-  padding: 0;
-  margin: 0;
-}
-
-header > nav .logo {
-  height: 2em;
-  width: auto;
-}
-header > nav #themeSwitch .heroicon {
-  height: 1em;
-}
-header > nav details .heroicon {
-  position: relative;
-  top: -1px;
-  height: 1em;
-}
-
 /*!
  * Pico CSS v1.5.9 (https://picocss.com)
  * Copyright 2019-2023 - Licensed under MIT
@@ -2666,6 +2541,265 @@ textarea,
     transition-duration: 0s !important;
   }
 }
+#error404 {
+  width: 100% !important;
+  height: 100vh !important;
+}
+#error404 * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#error404 img {
+  position: absolute;
+  left: 0;
+  height: min(70vh, 100vw);
+  width: auto;
+  bottom: 0;
+}
+#error404 h1,
+#error404 h2,
+#error404 p {
+  font-weight: 400;
+}
+#error404 main {
+  margin: min(1vh, 1rem) 1rem 1rem 1rem !important;
+  width: 100% !important;
+  height: 25vh !important;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+#error404 main > * {
+  margin-bottom: min(1vh, 1rem) !important;
+}
+
+.itinerary-card {
+  text-decoration: none;
+  --color: var(--color);
+  color: var(--color);
+}
+.itinerary-card:hover, .itinerary-card:active, .itinerary-card:focus {
+  --color: var(--color);
+  --text-decoration: none;
+  transition: unset;
+}
+.itinerary-card article {
+  padding: 0;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  min-height: 10rem;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+.itinerary-card article:hover, .itinerary-card article:active, .itinerary-card article:focus {
+  transform: scale(1.02);
+}
+.itinerary-card .itinerary-card__content {
+  padding: 0.25em 0;
+  margin: 0;
+  display: flex;
+  row-gap: 0.1em;
+  flex-direction: column;
+  width: 100%;
+}
+.itinerary-card .itinerary-card__content > * {
+  padding: 0 0.25em 0 0.6em;
+}
+.itinerary-card .itinerary-card__content .itinerary-card__content__name {
+  font-weight: 600;
+}
+.itinerary-card .itinerary-card__content .itinerary-card__content__date {
+  font-size: smaller;
+}
+.itinerary-card .itinerary-card__content .itinerary-card__content__description {
+  width: 100%;
+  padding-top: 0.2em;
+  border-top-style: dashed;
+  border-top-width: 1px;
+}
+.itinerary-card .itinerary-card__image {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 30%;
+}
+.itinerary-card .itinerary-card__image picture {
+  width: auto;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+.itinerary-card .itinerary-card__image picture img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.pagination {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  column-gap: 1.5em;
+}
+.pagination li {
+  padding: 0;
+  margin: 0 0.1em;
+}
+.pagination li a {
+  padding: 0;
+  margin: 0;
+}
+
+header > nav .logo {
+  height: 2em;
+  width: auto;
+}
+header > nav #themeSwitch .heroicon {
+  height: 1em;
+}
+header > nav details .heroicon {
+  position: relative;
+  top: -1px;
+  height: 1em;
+}
+
+.social-media {
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  --social-media-color: var(--color);
+  position: relative;
+}
+.social-media li {
+  list-style: none;
+}
+.social-media li a {
+  --color: var(--social-media-color);
+  color: var(--color);
+  display: block;
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+.social-media li a:hover, .social-media li a:active, .social-media li a:focus {
+  --color: var(--color);
+  --text-decoration: none;
+  transition: unset;
+}
+.social-media li a span:not(.social-media__logo):not(.visually-hidden) {
+  position: absolute;
+  transition: transform 0.5s;
+}
+.social-media li a span:nth-child(1), .social-media li a span:nth-child(3) {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color);
+}
+.social-media li a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+.social-media li a span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+}
+.social-media li a span:nth-child(2), .social-media li a span:nth-child(4) {
+  width: 3px;
+  height: 100%;
+  background-color: var(--color);
+}
+.social-media li a span:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transform-origin: bottom;
+}
+.social-media li a span:nth-child(4) {
+  top: 0;
+  right: 0;
+  transform: scale(0);
+  transform-origin: top;
+}
+.social-media li a:hover span:nth-child(1), .social-media li a:active span:nth-child(1), .social-media li a:focus span:nth-child(1) {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+.social-media li a:hover span:nth-child(3), .social-media li a:active span:nth-child(3), .social-media li a:focus span:nth-child(3) {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.social-media li a:hover span:nth-child(2), .social-media li a:active span:nth-child(2), .social-media li a:focus span:nth-child(2) {
+  transform: scale(1);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+.social-media li a:hover span:nth-child(4), .social-media li a:active span:nth-child(4), .social-media li a:focus span:nth-child(4) {
+  transform: scale(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+.social-media .social-media__facebook:hover, .social-media .social-media__facebook:active, .social-media .social-media__facebook:focus {
+  color: #3b5998;
+}
+.social-media .social-media__facebook:hover span:not(.social-media__logo):not(.visually-hidden), .social-media .social-media__facebook:active span:not(.social-media__logo):not(.visually-hidden), .social-media .social-media__facebook:focus span:not(.social-media__logo):not(.visually-hidden) {
+  background: #3b5998;
+}
+.social-media .social-media__twitter:hover, .social-media .social-media__twitter:active, .social-media .social-media__twitter:focus {
+  color: #1da1f2;
+}
+.social-media .social-media__twitter:hover span:not(.social-media__logo):not(.visually-hidden), .social-media .social-media__twitter:active span:not(.social-media__logo):not(.visually-hidden), .social-media .social-media__twitter:focus span:not(.social-media__logo):not(.visually-hidden) {
+  background: #1da1f2;
+}
+.social-media .social-media__instagram:hover, .social-media .social-media__instagram:active, .social-media .social-media__instagram:focus {
+  color: #c32aa3;
+}
+.social-media .social-media__instagram:hover span:not(.social-media__logo):not(.visually-hidden), .social-media .social-media__instagram:active span:not(.social-media__logo):not(.visually-hidden), .social-media .social-media__instagram:focus span:not(.social-media__logo):not(.visually-hidden) {
+  background: #c32aa3;
+}
+.social-media .social-media__tiktok:hover, .social-media .social-media__tiktok:active, .social-media .social-media__tiktok:focus {
+  color: #ee1d52;
+}
+.social-media .social-media__tiktok:hover span:not(.social-media__logo):not(.visually-hidden), .social-media .social-media__tiktok:active span:not(.social-media__logo):not(.visually-hidden), .social-media .social-media__tiktok:focus span:not(.social-media__logo):not(.visually-hidden) {
+  background: #ee1d52;
+}
+.social-media .social-media__mail:hover, .social-media .social-media__mail:active, .social-media .social-media__mail:focus {
+  color: #c71610;
+}
+.social-media .social-media__mail:hover span:not(.social-media__logo):not(.visually-hidden), .social-media .social-media__mail:active span:not(.social-media__logo):not(.visually-hidden), .social-media .social-media__mail:focus span:not(.social-media__logo):not(.visually-hidden) {
+  background: #c71610;
+}
+.social-media .social-media__logo {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.social-media .social-media__logo svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -2687,7 +2821,7 @@ header {
 }
 
 main {
-  padding: 0.5rem 0 !important;
+  padding: 2rem 0 0.5rem 0 !important;
 }
 
 header {
@@ -2697,6 +2831,10 @@ header {
 
 a[aria-current]:not([aria-current=false]) {
   text-decoration: underline;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
