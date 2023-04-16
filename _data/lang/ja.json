@@ -15,5 +15,6 @@
 	"error404": "404 エラー",
 	"message404": "コンテンツが見つかりません",
 	"mainPage404": "メインページに戻る",
-	"altItineraryCardThumbnail": "Itinerary thumbnail"
+	"altItineraryCardThumbnail": "Itinerary thumbnail",
+	"paginationPage": "Page"
 }

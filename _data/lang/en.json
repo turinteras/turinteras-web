@@ -15,5 +15,6 @@
 	"error404": "404 ERROR",
 	"message404": "Content not found",
 	"mainPage404": "Go to main page",
-	"altItineraryCardThumbnail": "Itinerary thumbnail"
+	"altItineraryCardThumbnail": "Itinerary thumbnail",
+	"paginationPage": "Page"
 }
