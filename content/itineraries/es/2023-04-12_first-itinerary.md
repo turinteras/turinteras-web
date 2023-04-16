@@ -1,25 +1,27 @@
 ---
 title: Primer itinerario
 description: Os presentamos nuestro primer itinerario. Nos trasladamos atrás en
-  el tiempo para convertirnos en burgueses y comerciantes y viajamos por la
-  Murcia histórica de entre los siglos XI y XIX, para disfrutar de sus lugares
-  más emblemáticos.
+    el tiempo para convertirnos en burgueses y comerciantes y viajamos por la
+    Murcia histórica de entre los siglos XI y XIX, para disfrutar de sus lugares
+    más emblemáticos.
 date: 2023-04-16
 itineraryDate: 2023-05-05T11:00:00
 ---
+
 Os presentamos nuestro primer itinerario. Nos trasladamos atrás en el tiempo para convertirnos en burgueses y comerciantes y viajamos por la Murcia histórica de entre los siglos XI y XIX, para disfrutar de sus lugares más emblemáticos.
+
 Salida: Plaza de Santa Clara
 Recorrido:
 
-* Teatro Romea
-*﻿ Calle de la Aurora
-*﻿ Palacio de San Esteban
-*﻿ Plaza de Santa Catalina
-*﻿ Plaza de las Flores
-*﻿ Iglesia de San Bartolomé
-*﻿ Casa Consistorial
-*﻿ Catedral de Murcia
-*﻿ Real Casino de Murcia
+-   Teatro Romea
+-   Calle de la Aurora
+-   Palacio de San Esteban
+-   Plaza de Santa Catalina
+-   Plaza de las Flores
+-   Iglesia de San Bartolomé
+-   Casa Consistorial
+-   Catedral de Murcia
+-   Real Casino de Murcia
 
 Llegada: Plaza de Santo Domingo
 Duración estimada: 1 hora y media
