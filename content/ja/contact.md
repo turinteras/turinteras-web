@@ -1,7 +1,4 @@
 ---
-cms: "contact"
+cms: contact
 ---
-
-# Contact JA
-
-Contact JA
+仕事上の理由、質問、提案など、遠慮なくご連絡ください。

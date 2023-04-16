@@ -1,7 +1,4 @@
 ---
-cms: "contact"
+cms: contact
 ---
-
-# Contact FR
-
-Contact FR
+N'hésitez pas à nous contacter, que ce soit pour des raisons professionnelles, des questions ou des suggestions.
