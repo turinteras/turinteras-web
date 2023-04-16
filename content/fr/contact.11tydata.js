@@ -1,5 +1,5 @@
 module.exports = {
-	layout: "layouts/base.njk",
+	layout: "layouts/contact.njk",
 	eleventyComputed: {
 		eleventyNavigation: {
 			key: (data) => data?.lang[data?.page?.lang]?.navContact,
