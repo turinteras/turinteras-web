@@ -73,6 +73,7 @@
 }
 .itinerary-card .itinerary-card__content .itinerary-card__content__description {
   width: 100%;
+  padding-top: 0.2em;
   border-top-style: dashed;
   border-top-width: 1px;
 }

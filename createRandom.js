@@ -26,8 +26,10 @@ const [createDate, itineraryDate] = (function () {
 })();
 
 const langs = ["en", "es", "fr", "ja"];
-for (let lang of langs) {
-	for (let i = n; i >= 1; i--) {
+for (let i = n; i >= 1; i--) {
+	const createDateVar = createDate();
+	const itineraryDateVar = itineraryDate();
+	for (let lang of langs) {
 		const folder = `content/itineraries/${lang}`;
 		const path = `${folder}/${pathPrefix}${i}`;
 
@@ -46,8 +48,8 @@ for (let lang of langs) {
 ---
 title: Fake itinerary number ${i} ${lang} 
 description: Description of fake itinerary number ${i}
-date: ${createDate()}
-itineraryDate: ${itineraryDate()}
+date: ${createDateVar}
+itineraryDate: ${itineraryDateVar}
 thumbnail: /public/img/catedral.jpg
 ---
 

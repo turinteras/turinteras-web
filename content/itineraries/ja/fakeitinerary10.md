@@ -1,8 +1,8 @@
 ---
 title: Fake itinerary number 10 ja 
 description: Description of fake itinerary number 10
-date: 2022-12-07
-itineraryDate: 2022-12-26
+date: 2023-04-02
+itineraryDate: 2023-04-17
 thumbnail: /public/img/catedral.jpg
 ---
 
