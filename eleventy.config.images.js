@@ -18,6 +18,8 @@ module.exports = (eleventyConfig) => {
 			let file;
 			if (src.startsWith("./")) {
 				file = relativeToInputPath(this.page.inputPath, src);
+			} else if (src.startsWith("/public/img/")) {
+				file = src.substring(1);
 			} else {
 				file = src;
 			}

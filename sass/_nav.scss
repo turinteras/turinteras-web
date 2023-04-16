@@ -1,0 +1,22 @@
+header {
+	nav {
+		.logo {
+			height: 2em;
+			width: auto;
+		}
+
+		#themeSwitch {
+			.heroicon {
+				height: 1em;
+			}
+		}
+
+		details {
+			.heroicon {
+				position: relative;
+				top: -1px;
+				height: 1em;
+			}
+		}
+	}
+}
