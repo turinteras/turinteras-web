@@ -1,0 +1,35 @@
+/* Webfont: Arvo-Bold */
+@font-face {
+	font-family: "Arvo";
+	src: url("/fonts/Arvo-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+	text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Arvo-BoldItalic */
+@font-face {
+	font-family: "Arvo";
+	src: url("/fonts/Arvo-BoldItalic.ttf") format("truetype");
+	font-style: italic;
+	font-weight: 700;
+	text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Arvo-Italic */
+@font-face {
+	font-family: "Arvo";
+	src: url("/fonts/Arvo-Italic.ttf") format("truetype");
+	font-style: italic;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Arvo-Regular */
+@font-face {
+	font-family: "Arvo";
+	src: url("/fonts/Arvo-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}

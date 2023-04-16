@@ -2817,14 +2817,8 @@ textarea,
   margin: 0;
 }
 
-header li {
-  font-weight: 700;
-}
 header > nav {
   column-gap: 0.8em;
-}
-header > nav #themeSwitch .heroicon {
-  height: 1em;
 }
 header > nav details .heroicon {
   position: relative;
@@ -2847,17 +2841,21 @@ header > nav > ul:first-child li:first-child .logo {
   width: auto;
   border-radius: 5px;
 }
-header > nav > ul:first-child li:nth-child(2) {
-  color: var(--dark-blue);
-  font-size: 130%;
-}
 header > nav > ul:not(:first-child) {
   margin: 0 !important;
   padding: 0 0 var(--header-padding) 0 !important;
   column-gap: 0.8em;
 }
 header > nav > ul:not(:first-child) > li {
+  font-weight: 700;
   padding: 0;
+}
+header .slogan {
+  text-align: center;
+  font-family: Arvo, -apple-system, system-ui, sans-serif !important;
+  color: var(--dark-blue);
+  font-size: 230%;
+  text-shadow: 2px 2px 0 hsla(0, 0%, 0%, 0.3);
 }
 
 .social-media {

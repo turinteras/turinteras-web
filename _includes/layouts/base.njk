@@ -15,9 +15,6 @@
 						lang[page.lang].altLogo,
 						"logo" %}
 					</li>
-					<li>
-					Turismo sin fronteras
-					</li>
 				</ul>
 				<h2 class="visually-hidden">{{ lang[page.lang].navigationMenu }}</h2>
 				<ul role="navigation">
@@ -47,12 +44,9 @@
 							</ul>
 						</details>
 					</li>
-					<li>
-						<a href="#" role="button" id="themeSwitch">{% heroicon "outline",
-							"sun" %}</a>
-					</li>
 				</ul>
 			</nav>
+			<div class="slogan">{{ lang[page.lang].slogan }}</div>
 		</header>
 
 		<main id="skip" class="container">
@@ -80,18 +74,6 @@
 			</nav>
 		</footer>
 		#}
-
-		<script defer>
-			document
-				.getElementById('themeSwitch')
-				.addEventListener('click', () => {
-					const htmlElement = document.querySelector('html');
-					const newTheme = htmlElement.getAttribute('data-theme') == 'dark'
-						? 'light'
-						: 'dark';
-					htmlElement.setAttribute('data-theme', newTheme);
-				})
-		</script>
 
 		<script>
 			if (window.netlifyIdentity) {

@@ -14,7 +14,7 @@ $grey-600: #183a1d;
 $grey-700: #183a1d;
 $grey-800: #183a1d;
 $grey-900: #183a1d;
-
+$white: #fefbe9;
 $primary-50: #3d6ddb;
 $primary-100: #3d6ddb;
 $primary-200: #3d6ddb;
@@ -27,7 +27,6 @@ $primary-800: #3d6ddb;
 $primary-900: #3d6ddb;
 
 $enable-responsive-spacings: false;
-$white: #fefbe9;
 @import "../pico/pico.scss";
 
 @import "error404";
