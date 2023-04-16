@@ -58,16 +58,23 @@ collections:
                 i18n: duplicate,
                 required: false,
             }
-          - {
-                label: "Image galery",
-                name: "imageGalery",
-                widget: "image",
-                media_folder: "/public/img",
-                allow_multiple: true,
-                choose_url: false,
-                i18n: duplicate,
-                required: false,
-            }
+          - label: "Image gallery"
+            name: "imageGalleryList"
+            widget: "list"
+            i18n: duplicate
+            required: false
+            summary: "{{fields.imageGallery}}"
+            field:
+                {
+                    label: "Image",
+                    name: "imageGallery",
+                    widget: "image",
+                    media_folder: "/public/img",
+                    allow_multiple: false,
+                    choose_url: false,
+                    i18n: duplicate,
+                    required: false,
+                }
           - { label: "Body", name: "body", widget: "markdown", i18n: true }
     - name: "pages"
       label: "Pages"
