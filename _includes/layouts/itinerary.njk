@@ -11,7 +11,9 @@ layout: layouts/base.njk
 
 <hr/>
 
-{{ content | safe }}
+<div class="itinerary-content">
+	{{ content | safe }}
+</div>
 
 {%- if collections.itineraries %}
 	{%- set previousItinerary = collections.itineraries | getPreviousCollectionItem %}

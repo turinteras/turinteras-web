@@ -3009,9 +3009,18 @@ header > nav > ul:not(:first-child) > li {
   border: 3px solid var(--primary);
   border-radius: 3px;
 }
-.itinerary-data img {
+
+.itinerary-content img {
+  clear: both;
+  margin: 0.8em 0 0.8em 0.8em;
+}
+.itinerary-content img:not([width]) {
   width: 50%;
-  margin: 0 auto;
+  float: right;
+}
+.itinerary-content img[width] {
+  max-width: 70%;
+  float: right;
 }
 
 .visually-hidden {
