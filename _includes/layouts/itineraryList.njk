@@ -23,7 +23,6 @@ layout: layouts/base.njk
 			</div>
 			<div class=itinerary-card__image>
 				{% if itinerary.data.thumbnail %}
-					{{ itinerary.data.thumbnail }}
 					{% image itinerary.data.thumbnail,
 					lang[page.lang].altItineraryCardThumbnail %}
 				{% else %}

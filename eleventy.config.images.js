@@ -29,7 +29,7 @@ module.exports = (eleventyConfig) => {
 				outputDir: path.join(eleventyConfig.dir.output, "img"), // Advanced usage note: `eleventyConfig.dir` works here because we’re using addPlugin.
 			});
 
-			// TODO loading=eager and fetchpriority=high
+			// _TODO loading=eager and fetchpriority=high
 			let imageAttributes = {
 				alt,
 				sizes,

@@ -1,8 +1,9 @@
 ---
 title: Fake itinerary number 9 ja 
 description: Description of fake itinerary number 9
-date: 2022-11-27
-itineraryDate: 2022-12-24
+date: 2022-12-07
+itineraryDate: 2022-12-22
+thumbnail: /public/img/catedral.jpg
 ---
 
 # Itinerary number 9

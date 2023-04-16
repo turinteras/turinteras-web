@@ -48,6 +48,7 @@ title: Fake itinerary number ${i} ${lang}
 description: Description of fake itinerary number ${i}
 date: ${createDate()}
 itineraryDate: ${itineraryDate()}
+thumbnail: /public/img/catedral.jpg
 ---
 
 # Itinerary number ${i}

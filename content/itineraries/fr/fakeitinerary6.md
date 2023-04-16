@@ -1,8 +1,9 @@
 ---
 title: Fake itinerary number 6 fr 
 description: Description of fake itinerary number 6
-date: 2022-12-26
-itineraryDate: 2023-01-02
+date: 2022-12-29
+itineraryDate: 2023-01-16
+thumbnail: /public/img/catedral.jpg
 ---
 
 # Itinerary number 6

@@ -1,8 +1,9 @@
 ---
 title: Fake itinerary number 7 fr 
 description: Description of fake itinerary number 7
-date: 2022-12-31
-itineraryDate: 2023-01-22
+date: 2023-01-01
+itineraryDate: 2023-01-11
+thumbnail: /public/img/catedral.jpg
 ---
 
 # Itinerary number 7
