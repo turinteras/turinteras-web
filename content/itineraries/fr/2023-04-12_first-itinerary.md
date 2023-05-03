@@ -5,7 +5,7 @@ description: Os presentamos nuestro primer itinerario. Nos trasladamos atrás en
   Murcia histórica de entre los siglos XI y XIX, para disfrutar de sus lugares
   más emblemáticos.
 date: 2023-04-16
-itineraryDate: 2023-05-05T11:00:00
+itineraryDate: 2023-05-04T11:00:00
 thumbnail: /public/img/ruta.png
 ---
 
